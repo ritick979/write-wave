@@ -26,7 +26,8 @@ public static void main(String[] args) throws InterruptedException {
 	 Thread.sleep(1000);
 	// driver.findElement(By.xpath("//div[@class=\"add-comment\"]")).sendKeys("Hii, i am raju shrivastav");
 	 driver.navigate().back();
-	 driver.findElement(By.className("create-btn")).click();
+     driver.navigate().back();
+	 driver.findElement(By.className("create-btnm")).click();
 	 driver.findElement(By.xpath("//input[@placeholder=\"Title\"]")).sendKeys("Hello Everyone, Good Morning:---");
 	 driver.findElement(By.xpath("//input[@placeholder=\"Summary\"]")).sendKeys("Hii, I am Ritik Kumar from Bihar (Muzaffarpur). In my city is famous for its fruits Litchi.");
 	 driver.findElement(By.xpath("//button[@class=\"create-btn\"]")).click(); // Unable to create a post. 
@@ -38,4 +39,5 @@ public static void main(String[] args) throws InterruptedException {
 	// driver.findElement(By.className("🌍 Travel Blogs")).click();
 	 driver.close();
 	 driver.quit();
+
 	 
